@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="scoring.css">
+    <title> DIVE INTO SAMPLE JavaScript </title>
+  </head>
+  <body>
+    <div class="container">
+      <br><br>
+      <p>名前：テスト太郎</p>
+      <table style="width:100%">
+        <tr>
+          <th>    </th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>National Language：</td>
+          <td><input type="number" id="national_language" value=0></td>
+        </tr>
+        <tr>
+          <td>English：</td>
+          <td><input type="number" id="english" value=0></td>
+        </tr>
+        <tr>
+          <td>Maths：</td>
+          <td><input type="number" id="mathematics" value=0></td>
+        </tr>
+        <tr>
+          <td>Science：</td>
+          <td><input type="number" id="science" value=0></td>
+        </tr>
+        <tr>
+          <td>Society：</td>
+          <td><input type="number" id="society" value=0></td>
+        </tr>
+        <tr>
+          <td>Sum：</td>
+          <td><p><label id="sum_indicate"></label></p></td>
+        </tr>
+        <tr>
+          <td>Average：</td>
+          <td><p><label id="average_indicate"></label></p></td>
+        </tr>
+      </table>
+      <br><br>
+      <table style="width:100%">
+        <tr>
+          <th>    </th>
+          <th>    </th>
+        </tr>
+        <tr>
+          <td><label class="btn btn-primary" id="btn-evaluation">Evaluation</label> ： </td>
+          <td><p><label id="evaluation"></label></p></td>
+        </tr>
+        <tr>
+          <td><label class="btn btn-success" id="btn-judge">Judge</label> ： </td>
+          <td><p><label id="judge"></label></p></td>
+        </tr>
+        <tr>
+          <td><label class="btn btn-warning" id="btn-declaration">Declaration</label> ： </td>
+          <td><p><label id="declaration"></label></p></td>
+        </tr>
+      </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="scoring.js"></script>
+  </body>
+</html>
+<!-- ここに書かれているhtmlの記述はあくまでヒントとして用意された雛形なので、書かれている記述に従わずに実装したいという場合は、自分の好きに実装して構わない。課題要件を満たし、コードの品質が一定の水準にあると判定されればどのような実装でも合格になる。 -->
