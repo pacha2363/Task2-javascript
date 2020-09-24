@@ -130,3 +130,8 @@ table, th, td {
 th, td {
   text-align: center;
 }
+
+.slide_menu nav ul li a.activemenu {
+  opacity: 0.3;
+  color: #000;
+}

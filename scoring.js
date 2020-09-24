@@ -58,7 +58,7 @@ $(document).ready(function(){
     let number = subject_points.length;
     let averagePoint = sum / number;
 
-    if ( averagePoint >= 40){
+    if ( averagePoint >= 60){
       return "Pass";
     } else {
       return "Fail";
@@ -80,6 +80,6 @@ $(document).ready(function(){
     $("#judge").text(get_pass_or_failure());
   });
   $('#btn-declaration').click(function() {
-    $("#declaration").text(`Your evaluation is ${get_achievement()}. You are ${get_pass_or_failure()}`);
+    $("#declaration").text(`Your evaluation is ${get_achievement()}. You are ${get_pass_or_failure()}.`);
   });
 });
