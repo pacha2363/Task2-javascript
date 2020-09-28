@@ -49,17 +49,34 @@ $(document).ready(function(){
                           Number($('#science').val()),
                           Number($('#society').val())
                           ];
+                          /*
     let sum = subject_points[0];
-        sum = sum + subject_points[1];
-        sum = sum + subject_points[2];
-        sum = sum + subject_points[3];
-        sum = sum + subject_points[4];
+    let sum = sum + subject_points[1];
+    let sum = sum + subject_points[2];
+    let sum = sum + subject_points[3];
+    let sum = sum + subject_points[4];
 
     let number = subject_points.length;
-    let averagePoint = sum / number;
+    let averagePoint = sum / number; */
 
-    if ( averagePoint >= 60){
-      return "Pass";
+    if ( subject_points[0] >= 60){
+      if ( subject_points[1] >= 60){
+        if ( subject_points[2] >= 60){
+          if ( subject_points[3] >= 60){
+            if ( subject_points[4] >= 60){
+              return "Pass";
+            } else {
+              return "Fail";
+            }
+          } else {
+            return "Fail";
+          }
+        } else {
+          return "Fail";
+        }
+      } else {
+        return "Fail";
+      }
     } else {
       return "Fail";
     }
